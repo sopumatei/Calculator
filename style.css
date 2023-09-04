@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+button {
+    font-size: inherit;
+}
+
+html {
+    font-size: 3rem;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+button {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+
+    transition: all 0.1s ease-in;
+    color: black;
+}
+
+button:active {
+    transform: scale(0.96);
+    opacity: 0.5;
+}
+
+#calculator {
+    max-height: 100vh;
+    max-width: 100vw;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: column nowrap;
+    gap: 0.5em;
+    padding: 0.25em 0.5em;
+}
+
+#calculator-input {
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    font-size: 0.8rem;
+    text-align: right;
+    padding: 0.25em;
+    border-radius: 2rem;
+}
+
+#calculator-operation-buttons {
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    gap: 0.7em;
+}
+
+#calculator-operation-buttons button {
+    background-color: #fdb14f;
+}
+
+#assign-buttons {
+    /* background-color: blue; */
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#main-buttons {
+    height: 100%;
+    width: 75%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.7em;
+}
+
+#equal-button {
+    height: 100%;
+    margin-left: auto;
+    background-color: #638fff;
+}
+
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.7em;
+}
+
+#cancel-button {
+    background-color: #fb4848;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 290px) {
+    html {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 350px) {
+    html {
+        font-size: 1.9rem;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    html {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 3rem;
+    }
+}
+
+
+
