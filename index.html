@@ -8,40 +8,36 @@
     </head>
     <body>
         <div id="calculator">
-            <input id="calculator-input" type="text">
-
-            <div id="calculator-operation-buttons">
-                <button id="add-button">+</button>
-                <button id="subtract-button">−</button>
-                <button id="multiply-button">×</button>
-                <button id="divide-button">÷</button>
+            <div id="calculator-input">
+                <span id="current-equation">2 + 2 =</span>
+                <span id="current-number">4</span>
             </div>
 
             <div id="assign-buttons">
-                <div id="main-buttons">
-                    <div class="container">
-                        <button id="one-button">1</button>
-                        <button id="two-button">2</button>
-                        <button id="three-button">3</button>
-                    </div>
-                    <div class="container">
-                        <button id="four-button">4</button>
-                        <button id="five-button">5</button>
-                        <button id="six-button">6</button>
-                    </div>
-                    <div class="container">
-                        <button id="seven-button">7</button>
-                        <button id="eight-button">8</button>
-                        <button id="nine-button">9</button>
-                    </div>
-                    <div class="container">
-                        <button id="zero-button">0</button>
-                        <button id="decimal-button">.</button>
-                        <button id="cancel-button">C</button>
-                    </div>
+                    <button id="add-button" class="equation-btn">+</button>
+                    <button id="subtract-button" class="equation-btn">−</button>
+                    <button id="multiply-button" class="equation-btn">×</button>
+                    <button id="divide-button" class="equation-btn">÷</button>
+
+                    <button id="one-button">1</button>
+                    <button id="two-button">2</button>
+                    <button id="three-button">3</button>
+
+                    <button id="four-button">4</button>
+                    <button id="five-button">5</button>
+                    <button id="six-button">6</button>
+
+                    <button id="seven-button">7</button>
+                    <button id="eight-button">8</button>
+                    <button id="nine-button">9</button>
+
+                    <button id="zero-button">0</button>
+                    <button id="decimal-button">.</button>
+
+                    <button id="clear-button" class="span-2 del-btn">C</button>
+                    <button id="all-clear-button" class="span-2 del-btn">AC</button>
+                    <button id="equal-button" class="span-3">=</button>
                 </div>
-                <button id="equal-button">=</button>
-            </div>
         </div>
 
         <script src="./app.js"></script>
