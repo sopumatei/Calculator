@@ -1,3 +1,7 @@
+/* IMPORTING FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +11,11 @@
 
 button {
     font-size: inherit;
+}
+
+/* GENERAL STYLES */
+html {
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -25,7 +34,7 @@ button {
 
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 
-    transition: all 0.1s ease-in;
+    transition: all 0.1s linear;
     color: black;
 }
 
@@ -37,10 +46,11 @@ button:active {
 /* CALCULATOR */
 
 #calculator {
-    text-align: center;
+    border-radius: 16px;
     padding: 15px;
-    height: min(80vh, 450px);
-    width: min(90vw, 350px);
+    min-height: 600px;
+    height: min(80vh, 750px);
+    width: min(90vw, 650px);
     background-color: #fff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
@@ -51,9 +61,29 @@ button:active {
     gap: 15px;
 }
 
+/* INPUT */
+#calculator-input {
+    font-size: inherit;
+    padding: 15px;
+    height: 20%;
+    width: 100%;
+
+    border: 3px solid black;
+    border-radius: 15px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+#current-number {
+    font-weight: 800;
+}
+
+/* BUTTONS */
 #assign-buttons {
     place-items: center;
-    background-color: aqua;
     width: 100%;
     height: 100%;
     display: grid;
@@ -73,6 +103,14 @@ button:active {
     background-color: #638fff;
 }
 
+.del-btn {
+    background-color: #fb4848;
+}
+
+.equation-btn {
+    background-color: #fdb14f;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 200px) {
@@ -85,6 +123,14 @@ button:active {
         height: 40px;
         border-radius: 40px;
     }
+
+    #calculator {
+        min-height: 450px;
+    }
+
+    #calculator-input {
+        font-size: 15px;
+    }
 }
 
 @media screen and (min-width: 350px) {
@@ -93,10 +139,18 @@ button:active {
     }
 
     button {
+        font-size: 25px;
+        width: 55px;
+        height: 55px;
+        border-radius: 55px;
+    }
+
+    #calculator {
+        min-height: 550px;
+    }
+
+    #calculator-input {
         font-size: 20px;
-        width: 45px;
-        height: 45px;
-        border-radius: 45px;
     }
 }
 
@@ -106,10 +160,39 @@ button:active {
     }
 
     button {
+        font-size: 30px;
+        width: 70px;
+        height: 70px;
+        border-radius: 70px;
+    }
+
+    #calculator {
+        min-height: 650px;
+    }
+
+    #calculator-input {
         font-size: 25px;
-        width: 50px;
-        height: 50px;
-        border-radius: 50px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    html {
+        font-size: 35px;
+    }
+
+    button {
+        font-size: 30px;
+        width: 75px;
+        height: 75px;
+        border-radius: 75px;
+    }
+
+    #calculator-input {
+        font-size: 25px;
+    }
+
+    #current-number {
+        font-size: 35px;
     }
 }
 
