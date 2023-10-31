@@ -10,6 +10,7 @@ button {
 }
 
 body {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,8 +37,8 @@ button:active {
 /* CALCULATOR */
 
 #calculator {
-    height: min(80vh, 750px);
-    width: min(60vw, 650px);
+    height: min(80vh, 450px);
+    width: min(90vw, 350px);
     background-color: #fff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
