@@ -33,7 +33,19 @@ button:active {
     opacity: 0.5;
 }
 
-/*  */
+/* CALCULATOR */
+
+#calculator {
+    height: min(80vh, 750px);
+    width: min(60vw, 650px);
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Media Queries */
 
