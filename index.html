@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Calculator</title>
         <link rel="stylesheet" href="./style.css">
+        <script src="./app.js" defer></script>
     </head>
     <body>
         <div id="calculator">
@@ -40,6 +41,16 @@
                 </div>
         </div>
 
-        <script src="./app.js"></script>
+        <div id="footer">
+            <h5 id="copyright-text"></h5>
+        </div>
+
+        <script>
+            let currentDate = new Date;
+            let currentYear = currentDate.getFullYear();
+
+            const copyrightTxt = document.getElementById('copyright-text');
+            copyrightTxt.textContent = `Copyright © ${currentYear} sopumatei`;
+        </script>
     </body>
 </html>

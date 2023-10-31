@@ -21,7 +21,8 @@ html {
 body {
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-flow: column nowrap;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -133,6 +134,7 @@ button:active {
     }
 }
 
+/* MEDIA QUERIES */
 @media screen and (min-width: 350px) {
     html {
         font-size: 25px;
