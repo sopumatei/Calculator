@@ -10,9 +10,9 @@ button {
 }
 
 body {
-    display: grid;
-    place-content: center;
-    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
@@ -33,7 +33,7 @@ button:active {
     opacity: 0.5;
 }
 
-
+/*  */
 
 /* Media Queries */
 
