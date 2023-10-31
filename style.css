@@ -55,9 +55,9 @@ button:active {
     }
 
     button {
-        width: 32px;
-        height: 32px;
-        border-radius: 32px;
+        width: 16px;
+        height: 16px;
+        border-radius: 16px;
     }
 }
 
@@ -67,9 +67,9 @@ button:active {
     }
 
     button {
-        width: 48px;
-        height: 48px;
-        border-radius: 48px;
+        width: 28px;
+        height: 28px;
+        border-radius: 28px;
     }
 }
 
@@ -79,9 +79,9 @@ button:active {
     }
 
     button {
-        width: 64px;
-        height: 64px;
-        border-radius: 64px;
+        width: 32px;
+        height: 32px;
+        border-radius: 32px;
     }
 }
 
